@@ -1,0 +1,47 @@
+<div class="container m-2">
+  <div class="card">
+    <div class="card-header">
+      <h3>Empresas</h3>
+    </div>
+    <div class="card-body">
+      <table class="table table-responsive">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>NIT</th>
+            <th>Nombre Empresa</th>
+            <th>Direccion</th>
+            <th>Telefono</th>
+            <th>Ciudad</th>
+            <th>Contacto</th>
+            <th>Correo del contacto</th>
+            <th>Usuario</th>
+            <th>Clave</th>
+            <th>ACCION</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let empresa of empresas" class="text-center">
+            <td>{{ empresa.id }}</td>
+            <td>{{ empresa.nit }}</td>
+            <td>{{ empresa.nombre_emp }}</td>
+            <td>{{ empresa.direccion}}</td>
+            <td>{{ empresa.telefono}}</td>
+            <td>{{ empresa.ciudad}}</td>
+            <td>{{ empresa.contacto}}</td>
+            <td>{{ empresa.correo_contacto}}</td>
+            <td>{{ empresa.usuario}}</td>
+            <td>{{ empresa.clave}}</td>
+            <td></td>
+           <td>
+             <button class="btn btn-warning">Editar</button>
+             <button class="btn btn-danger" style="margin-left: 15px;">Eliminar</button>
+           </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+</div>
